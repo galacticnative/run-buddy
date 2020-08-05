@@ -201,29 +201,69 @@ section {
     border-color: #39a6b2;
 }
 
-.steps div {
-    margin-bottom: 80px;
+/* removed .steps div */
+
+/* removed .steps img */
+
+/* added CSS for step class */
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.steps img {
-    width: 15%;
-    margin: 10px 0;
+/* added new rule for .step-info and flex scale */
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.steps h3 {
+/* removed margin-top and changed name from .steps */
+/* added flex scale */
+.step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px;
+    flex: 1 30%;
 }
 
-.steps p {
+/* added .step-img to set space */
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+/* set img limit for browser uniformity */
+.step-img img {
+    max-width: 100%;
+}
+
+/* added .step-text to even images */
+.step-text {
+    flex: 12;
+}
+
+/* changed named from .steps p */
+/* changed font size from 23px */
+.step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
 }
 
-.steps span {
-    font-size: 38px;
+/* new css style for h4 */
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
 }
+
+/* removed .steps span */
 
 /* removed text-align */
 .trainers {
