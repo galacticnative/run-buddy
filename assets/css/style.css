@@ -56,7 +56,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
-/* added flexbox */ 
+/* added flexbox */
 /* added element spacing and wrapping */
 footer {
     background: #fce138;
@@ -89,23 +89,26 @@ section {
 }
 
 /* Hero Styles Start */
+/* removed height and position declarations*/
+/* added flex display, centered elements,  */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+/* removed width, position, bottom, right positions */
+/* added width and margin sizing */
 .hero-form {
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-intro {
@@ -142,6 +145,22 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+/* entered call to action styles */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size 18px; 
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 /* Hero Styles End */
 
