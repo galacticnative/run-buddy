@@ -38,14 +38,22 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+/* removed css for header nav ul li */
+
+/* added flexbox properties to nav links */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
+/* changed font-size units to vw (viewport width) from px */
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 footer {
