@@ -405,8 +405,65 @@ section {
 }
 
 /* remove float, change width from 35% */
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0; 
+    opacity: 0;          
+}
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+}
+
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: cover;
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: cover;
+}
+
+.trainer-img h3 {
+    position: relative;
+    z-index: 1000;
+    font-size: 28px;
+    margin-bottom: 5px;
+    top: 200px;
+    transition: 0.6s;
+}
+
+.trainer-img h4 {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    top: 200px;
+    transition-delay: 0.6s;
 }
 
 /* cut&paste line-height from .trainer-bio p */
@@ -421,6 +478,7 @@ section {
 /* removed margin bottom and updated font-size from 32px */
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 
 /* change font-size from 26px, change margin bottom from 25px */
@@ -428,6 +486,7 @@ section {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
@@ -677,6 +736,30 @@ section {
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1;
+    }
+
+    .trainer-img::after {
+        display: none;
+    }
+
+    .trainer-img h3 {
+        display: none;
+    }
+
+    .trainer-img h4 {
+        display: none;
+    }
+
+    .trainer-bio h3 {
+        font-size: 28px;
+        display: block;
+    }
+
+    .trainer-bio h4 {
+        font-weight: lighter;
+        font-size: 22px;
+        margin-bottom: 15px;
+        display: block;
     }
 
 }
